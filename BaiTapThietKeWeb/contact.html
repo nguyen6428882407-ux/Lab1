@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ Với Chúng Tôi - ArtVibe Gallery</title>
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="Option-Page">
+            <a href="index.html" class="Logo">
+                <span id="Text1-Logo">ArtVibe</span>
+                <span id="Text2-Logo">Gallery</span>
+            </a>
+            <nav class="Page">
+                <a href="index.html">Trang chủ</a>
+                <a href="shop.html">Cửa hàng</a>
+                <a href="introduce.html">Giới thiệu</a>
+                <a href="contact.html" class="active">Liên hệ</a>
+            </nav>
+            <div class="Nav-Icons">
+                <a href="shop.html" class="Nav-Icon-Btn" title="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="contact.html" class="Nav-Icon-Btn" title="Tài khoản"><i class="fa-regular fa-user"></i></a>
+                <a href="shop.html" class="Nav-Icon-Btn" title="Giỏ hàng">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="Cart-Count" id="cartCount">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <main class="Contact-Section">
+        <h1 class="Section-Title">Liên Hệ Với Chúng Tôi</h1>
+        
+        <div class="Contact-Card-Container">
+            <!-- Cột Trái: Form gửi tin nhắn -->
+            <div class="Contact-Form-Col">
+                <h2>Gửi Tin Nhắn Cho Chúng Tôi</h2>
+                <form id="contactForm">
+                    <div class="Form-Group">
+                        <label for="contactName">Họ và tên *</label>
+                        <input type="text" id="contactName" class="Form-Control" placeholder="Nhập họ và tên của bạn..." required>
+                    </div>
+
+                    <div class="Form-Group">
+                        <label for="contactEmail">Email *</label>
+                        <input type="email" id="contactEmail" class="Form-Control" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="Form-Group">
+                        <label for="contactPhone">Số điện thoại *</label>
+                        <input type="tel" id="contactPhone" class="Form-Control" placeholder="0901 234 567" required>
+                    </div>
+
+                    <div class="Form-Group">
+                        <label for="contactMessage">Lời nhắn</label>
+                        <textarea id="contactMessage" class="Form-Control" rows="4" placeholder="Bạn muốn tư vấn tác phẩm nào hoặc có câu hỏi gì cho chúng tôi?"></textarea>
+                    </div>
+
+                    <button type="submit" class="Btn-Submit">Gửi Tin Nhắn &rarr;</button>
+                </form>
+            </div>
+
+            <!-- Cột Phải: Thông tin liên hệ & Bản đồ -->
+            <div class="Contact-Info-Col">
+                <h2>Thông Tin Liên Hệ</h2>
+                
+                <div class="Info-Items">
+                    <div class="Info-Row">
+                        <div class="Info-Icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="Info-Text">
+                            <h5>Địa Chỉ Gallery</h5>
+                            <p>123 Nguyễn Huệ, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</p>
+                        </div>
+                    </div>
+
+                    <div class="Info-Row">
+                        <div class="Info-Icon"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div class="Info-Text">
+                            <h5>Hotline Tư Vấn</h5>
+                            <p>1900 1234 - (028) 3822 5678 (8:00 - 21:00)</p>
+                        </div>
+                    </div>
+
+                    <div class="Info-Row">
+                        <div class="Info-Icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                        <div class="Info-Text">
+                            <h5>Hộp Thư Điện Tử</h5>
+                            <p>lienhe@artvibe.vn | support@artvibe.vn</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Frame -->
+                <div class="Map-Box">
+                    <iframe src="https://maps.google.com/maps?q=123%20Nguyen%20Hue,%20District%201,%20Ho%20Chi%20Minh%20City&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <!-- Mạng xã hội -->
+                <div class="Social-Icons">
+                    <a href="https://facebook.com" target="_blank" class="Social-Btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="Social-Btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" class="Social-Btn" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="Main-Footer">
+        <div class="Footer-Content">
+            <div class="Footer-Col">
+                <h4>ArtVibe Gallery</h4>
+                <p>Không gian lưu giữ và lan tỏa tình yêu nghệ thuật hội họa kinh điển thế giới. Đưa những kiệt tác bất hủ vào không gian sống đẳng cấp của bạn.</p>
+                <p><i class="fa-solid fa-location-dot" style="color: #ffd700;"></i> 123 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</p>
+            </div>
+            <div class="Footer-Col">
+                <h4>Liên Kết Nhanh</h4>
+                <ul class="Footer-Links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="shop.html">Cửa hàng kiệt tác</a></li>
+                    <li><a href="introduce.html">Về ArtVibe Gallery</a></li>
+                    <li><a href="contact.html">Liên hệ tư vấn</a></li>
+                </ul>
+            </div>
+            <div class="Footer-Col">
+                <h4>Hỗ Trợ & Dịch Vụ</h4>
+                <p><i class="fa-solid fa-phone" style="color: #ffd700;"></i> Hotline: 1900 1234 (8:00 - 21:00)</p>
+                <p><i class="fa-solid fa-envelope" style="color: #ffd700;"></i> Email: lienhe@artvibe.vn</p>
+                <p><i class="fa-solid fa-shield-halved" style="color: #ffd700;"></i> Bảo hành màu sắc tranh 10 năm</p>
+            </div>
+        </div>
+        <div class="Footer-Bottom">
+            &copy; 2026 ArtVibe Gallery. Bản quyền thuộc về ArtVibe. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="Scripts/main.js"></script>
+</body>
+</html>
